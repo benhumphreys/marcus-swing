@@ -1,0 +1,11 @@
+# Marcus Swing
+
+## Accelerometer datasheet
+
+* https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL337.pdf
+
+## Drivers for SIM7000
+
+* https://wiki.dfrobot.com/SIM7000_Arduino_NB-IoT_LTE_GPRS_Expansion_Shield_SKU__DFR0505_DFR0572
+* https://codeload.github.com/DFRobot/DFRobot_SIM/zip/master
+* https://codeload.github.com/DFRobot/DFRobot_SIM7000/zip/master
