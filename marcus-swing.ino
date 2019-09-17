@@ -1,3 +1,5 @@
+#include "LowPower.h"
+
 #define DEBUG
 
 // The pin that buzzer is connected to
@@ -49,7 +51,9 @@ void loop() {
       }
     }
 
-    delay(100);
+    LowPower.powerDown(SLEEP_120MS, ADC_OFF, BOD_OFF);
+    // Need time for the accelerometer to power up
+    delay(30);
   }
 }
 
@@ -60,7 +64,7 @@ float getScaledZ() {
 
 void beep() {
   // pin, freq in Hz, duration in ms
-  tone(SPEAKER_PIN, 300, 50);
+  tone(SPEAKER_PIN, 300, 30);
 }
 
 void increment() {
